@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>8skills - Workshops for Athletes</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	</head>
+
+	<body>
+		
+		<div id="app-container">
+		</div>
+
+		<script src="//localhost:8080/public/js/app.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".button-collapse").sideNav();
+			    $('.scrollspy').scrollSpy();
+		        $('select').material_select();
+		        $('.datepicker').pickadate({
+		           selectMonths: true, // Creates a dropdown to control month
+		           selectYears: 15 // Creates a dropdown of 15 years to control year
+		        });
+		        $('ul.tabs').tabs();
+			});
+		</script>
+		
+	</body>
+</html>
