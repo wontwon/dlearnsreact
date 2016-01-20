@@ -1,15 +1,9 @@
-require('dotenv').load();
-console.log("Environment: ", process.env.ENVIRONMENT)
-
 // These two lines are required to initialize Express in Cloud Code.
 var bodyParser = require('body-parser')
 var express = require('express');
 var app = express();
 
-// Global app configuration section
-var viewFolder = process.env.ENVIRONMENT == "development" ? "views" : "cloud/views";
-
-app.set('views', viewFolder);  // Specify the folder to find templates
+app.set('views', 'views');  // Specify the folder to find templates
 app.set('view engine', 'ejs');    // Set the template engine
 
 //body parser

@@ -8,7 +8,7 @@ module.exports = [
 	{
 		context: path.join(__dirname, "src"),
 		entry: {
-			app: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/only-dev-server', './app/index.js']
+			app: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/only-dev-server', './app/app.js']
 		},
 		output: {
 			path: path.join(__dirname, "public", "js"),
